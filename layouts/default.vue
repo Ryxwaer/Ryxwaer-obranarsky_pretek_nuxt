@@ -1,7 +1,10 @@
 <template>
-  <div class="min-h-screen flex flex-col scrollbar-hide">
+  <div class="min-h-screen flex flex-col scrollbar-hide bg-gray-50">
     <!-- Page content -->
-    <slot />
+    <div class="flex-grow flex items-center justify-center p-4">
+      <slot />
+    </div>
+    <div class="h-16" />
 
     <!-- Bottom Navigation Bar -->
     <nav class="fixed bottom-0 left-0 w-full flex justify-start items-center bg-gray-900 p-4 z-50 h-16 text-xl">
