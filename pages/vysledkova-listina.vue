@@ -13,7 +13,7 @@ const htmlContent = ref('');
 
 onMounted(async () => {
   const response = await fetch('/html/vysledkova-listina.html');
-  
+
   if (response.ok) {
     htmlContent.value = await response.text();
   } else {

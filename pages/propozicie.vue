@@ -7,11 +7,8 @@
 
       <!-- Responsive Image at the end -->
       <div class="flex justify-center mt-6">
-        <img
-          src="/html/propozicie._html_c919892b.png"
-          alt="Propozicie Image"
-          class="w-full max-w-xs md:max-w-md h-auto"
-        />
+        <img src="/html/propozicie._html_c919892b.png" alt="Propozicie Image"
+          class="w-full max-w-xs md:max-w-md h-auto" />
       </div>
     </div>
   </div>
@@ -22,7 +19,7 @@ const htmlContent = ref('');
 
 onMounted(async () => {
   const response = await fetch('/html/propozicie.html');
-  
+
   if (response.ok) {
     htmlContent.value = await response.text();
   } else {
