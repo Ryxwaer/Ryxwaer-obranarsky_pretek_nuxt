@@ -1,9 +1,9 @@
 services:
-  smart_living:
-    container_name: smart_living
+  pretek:
+    container_name: pretek
     build:
       context: .
-    image: smart_living:latest
+    image: pretek:latest
     pull_policy: build
     networks:
       - nginx-proxy-manager_default
