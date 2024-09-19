@@ -16,13 +16,15 @@
 
       <!-- Links for Desktop View -->
       <div class="hidden md:flex items-center space-x-8">
-        <NuxtLink to="/propozicie" class="text-white hover:text-red-600 transition-colors duration-300 ease-in-out">
+        <NuxtLink to="/propozicie" prefetch
+          class="text-white hover:text-red-600 transition-colors duration-300 ease-in-out">
           Propozície</NuxtLink>
-        <NuxtLink to="/vysledkova-listina"
+        <NuxtLink to="/vysledkova-listina" prefetch
           class="text-white hover:text-red-600 transition-colors duration-300 ease-in-out">Výsledková listina</NuxtLink>
-        <NuxtLink to="/plocha-sutaze" class="text-white hover:text-red-600 transition-colors duration-300 ease-in-out">
+        <NuxtLink to="/plocha-sutaze" prefetch
+          class="text-white hover:text-red-600 transition-colors duration-300 ease-in-out">
           Plocha súťaže</NuxtLink>
-        <NuxtLink to="/kontakt" class="text-white hover:text-red-600 transition-colors duration-300 ease-in-out">Kontakt
+        <NuxtLink to="/kontakt" prefetch class="text-white hover:text-red-600 transition-colors duration-300 ease-in-out">Kontakt
         </NuxtLink>
       </div>
     </nav>
@@ -30,13 +32,13 @@
     <transition name="slide-up" class="z-30 text-lg">
       <div v-if="isMobileMenuOpen"
         class="fixed bottom-12 left-0 right-0 bg-gray-900 text-white p-6 flex flex-col items-start space-y-6 z-30 md:hidden">
-        <NuxtLink to="/propozicie" class="text-white hover:text-red-600 transition-colors duration-300"
+        <NuxtLink to="/propozicie" prefetch class="text-white hover:text-red-600 transition-colors duration-300"
           @click="closeMobileMenu">Propozície</NuxtLink>
-        <NuxtLink to="/vysledkova-listina" class="text-white hover:text-red-600 transition-colors duration-300"
+        <NuxtLink to="/vysledkova-listina" prefetch class="text-white hover:text-red-600 transition-colors duration-300"
           @click="closeMobileMenu">Výsledková listina</NuxtLink>
-        <NuxtLink to="/plocha-sutaze" class="text-white hover:text-red-600 transition-colors duration-300"
+        <NuxtLink to="/plocha-sutaze" prefetch class="text-white hover:text-red-600 transition-colors duration-300"
           @click="closeMobileMenu">Plocha súťaže</NuxtLink>
-        <NuxtLink to="/kontakt" class="text-white hover:text-red-600 transition-colors duration-300"
+        <NuxtLink to="/kontakt" prefetch class="text-white hover:text-red-600 transition-colors duration-300"
           @click="closeMobileMenu">Kontakt</NuxtLink>
       </div>
     </transition>
