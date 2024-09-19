@@ -1,0 +1,14 @@
+services:
+  smart_living:
+    container_name: smart_living
+    build:
+      context: .
+    image: smart_living:latest
+    pull_policy: build
+    networks:
+      - nginx-proxy-manager_default
+    restart: unless-stopped
+
+networks:
+  nginx-proxy-manager_default:
+    external: true

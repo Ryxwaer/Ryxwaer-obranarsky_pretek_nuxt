@@ -1,0 +1,30 @@
+<template>
+  <div class="min-h-screen flex flex-col">
+    <slot />
+    <!-- Navigation Bar -->
+    <nav class="fixed bottom-0 w-full bg-gray-800 text-white py-3 md:py-4">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <!-- For mobile, consider icons or smaller links -->
+        <nuxt-link to="/propozicie" class="hover:text-red-500 text-white text-base md:text-lg font-medium">
+          Propozície
+        </nuxt-link>
+        <nuxt-link to="/vysledkova-listina" class="hover:text-red-500 text-white text-base md:text-lg font-medium">
+          Výsledková Listina
+        </nuxt-link>
+        <nuxt-link to="/plocha-sutaze" class="hover:text-red-500 text-white text-base md:text-lg font-medium">
+          Plocha Súťaže
+        </nuxt-link>
+        <nuxt-link to="/kontakt" class="hover:text-red-500 text-white text-base md:text-lg font-medium">
+          Kontakt
+        </nuxt-link>
+      </div>
+    </nav>
+  </div>
+</template>
+
+<style scoped>
+nav {
+  background-color: #333;
+  z-index: 100;
+}
+</style>
