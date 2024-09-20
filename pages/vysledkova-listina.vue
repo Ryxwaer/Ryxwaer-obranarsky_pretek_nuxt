@@ -1,11 +1,9 @@
 <template>
-  <div class="p-4 md:p-8">
     <!-- Container for the content -->
     <div class="container mx-auto max-w-4xl bg-white p-4 md:p-8 rounded-lg shadow-lg">
       <!-- Render HTML content once for both mobile and desktop -->
       <div v-html="htmlContent"></div>
     </div>
-  </div>
 </template>
 
 <script setup>

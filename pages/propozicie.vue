@@ -1,5 +1,4 @@
 <template>
-  <div class="p-4 md:p-8">
     <!-- Container for the content -->
     <div class="container mx-auto max-w-4xl bg-white p-4 md:p-8 rounded-lg shadow-lg">
       <!-- Render HTML content once for both mobile and desktop -->
@@ -10,7 +9,6 @@
         <img src="/html/propozicie._html_c919892b.png" alt="Propozicie Image"
           class="w-full max-w-xs md:max-w-md h-auto" />
       </div>
-    </div>
   </div>
 </template>
 

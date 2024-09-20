@@ -8,6 +8,7 @@
 html,
 body {
   height: 100%; /* Make sure the body takes the full height */
+  @apply bg-gray-50;
 }
 
 /* Hide scrollbar for Webkit-based browsers (Chrome, Safari, Edge) */

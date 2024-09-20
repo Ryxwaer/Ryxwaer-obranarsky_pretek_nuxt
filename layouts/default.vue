@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col scrollbar-hide bg-gray-50">
     <!-- Page content -->
-    <div class="flex-grow flex items-center justify-center p-4">
+    <div class="items-center justify-center p-4 md:p-8">
       <slot />
     </div>
     <div class="h-16" />
