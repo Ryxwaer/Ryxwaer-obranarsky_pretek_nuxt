@@ -9,7 +9,7 @@
     <!-- Bottom Navigation Bar -->
     <nav class="fixed bottom-0 left-0 w-full flex justify-start items-center bg-gray-900 p-4 z-50 h-20 text-xl">
       <!-- Home button -->
-      <NuxtLink @click="closeMobileMenu" to="/" aria-label="Home" class="text-white hover:text-red-600 transition-colors duration-300 ml-4 w-20">
+      <NuxtLink @click="closeMobileMenu" to="/" aria-label="Home" class="text-white hover:text-red-600 transition-colors duration-300 ml-4 w-20 active:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
           class="w-8 h-8">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9M9 21V10h6v11" />
@@ -17,7 +17,7 @@
       </NuxtLink>
 
       <!-- Mobile menu button -->
-      <button class="block md:hidden text-white ml-4 hover:text-red-600 transition-colors duration-300 z-50 w-full"
+      <button class="block md:hidden text-white ml-4 hover:text-red-600 transition-colors duration-300 z-50 w-full active:text-white"
         @click="toggleMobileMenu" aria-label="Open Menu">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
           class="w-8 h-8">
