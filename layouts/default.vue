@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col scrollbar-hide bg-gray-50">
     <!-- Page content -->
-    <div class="items-center justify-center p-4 md:p-8">
+    <div class="p-4 md:p-8">
       <slot />
     </div>
     <div class="h-16" />
@@ -9,7 +9,8 @@
     <!-- Bottom Navigation Bar -->
     <nav class="fixed bottom-0 left-0 w-full flex justify-start items-center bg-gray-900 p-4 z-50 h-20 text-xl">
       <!-- Home button -->
-      <NuxtLink @click="closeMobileMenu" to="/" aria-label="Home" class="text-white hover:text-red-600 transition-colors duration-300 ml-4 w-20 active:text-white">
+      <NuxtLink @click="closeMobileMenu" to="/" aria-label="Home"
+        class="text-white hover:text-red-600 transition-colors duration-300 ml-4 w-20 active:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
           class="w-8 h-8">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9M9 21V10h6v11" />
@@ -17,7 +18,8 @@
       </NuxtLink>
 
       <!-- Mobile menu button -->
-      <button class="block md:hidden text-white ml-4 hover:text-red-600 transition-colors duration-300 z-50 w-full active:text-white"
+      <button
+        class="block md:hidden text-white ml-4 hover:text-red-600 transition-colors duration-300 z-50 w-full active:text-white"
         @click="toggleMobileMenu" aria-label="Open Menu">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
           class="w-8 h-8">
@@ -47,10 +49,12 @@
         class="fixed bottom-12 left-0 right-0 bg-gray-900 text-white p-6 flex flex-col items-start space-y-6 z-30 md:hidden">
         <NuxtLink to="/propozicie" prefetch class="text-white hover:text-red-600 transition-colors duration-300 w-full"
           @click="closeMobileMenu">Propozície</NuxtLink>
-        <NuxtLink to="/vysledkova-listina" prefetch class="text-white hover:text-red-600 transition-colors duration-300 w-full"
-          @click="closeMobileMenu">Výsledková listina</NuxtLink>
-        <NuxtLink to="/plocha-sutaze" prefetch class="text-white hover:text-red-600 transition-colors duration-300 w-full"
-          @click="closeMobileMenu">Plocha súťaže</NuxtLink>
+        <NuxtLink to="/vysledkova-listina" prefetch
+          class="text-white hover:text-red-600 transition-colors duration-300 w-full" @click="closeMobileMenu">
+          Výsledková listina</NuxtLink>
+        <NuxtLink to="/plocha-sutaze" prefetch
+          class="text-white hover:text-red-600 transition-colors duration-300 w-full" @click="closeMobileMenu">Plocha
+          súťaže</NuxtLink>
         <NuxtLink to="/kontakt" prefetch class="text-white hover:text-red-600 transition-colors duration-300 w-full"
           @click="closeMobileMenu">Kontakt</NuxtLink>
       </div>
