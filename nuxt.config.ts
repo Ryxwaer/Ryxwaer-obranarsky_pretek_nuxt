@@ -2,7 +2,7 @@ import { randomBytes } from 'crypto';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
 
   css: [
     '@/assets/css/global.css',

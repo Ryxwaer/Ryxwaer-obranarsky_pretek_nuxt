@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@i2d/nuxt-pdf-frame": "^0.3.0",
+    "@nuxt/image": "^1.8.0",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"

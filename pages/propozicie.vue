@@ -6,7 +6,7 @@
 
       <!-- Responsive Image at the end -->
       <div class="flex justify-center mt-6">
-        <img src="/html/propozicie._html_c919892b.png" alt="Propozicie Image"
+        <NuxtImg src="/html/propozicie._html_c919892b.png" alt="Propozicie Image"
           class="w-full max-w-xs md:max-w-md h-auto" />
       </div>
   </div>
